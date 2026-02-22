@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #faf7f2;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #3e2723;
+}
+
+.logo {
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #d7ccc8;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #3e2723;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+}
+
+.contact-form button {
+  background: #3e2723;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3e2723;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+}
